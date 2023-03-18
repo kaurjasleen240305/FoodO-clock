@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+}
+.fade-in-image{
+    width:100%;
+    animation:fadeIn 5s;
+}
+.img{
+    width: 100vw;
+    height: 50vh;
+}
+.name{
+    text-align: center;
+            font-size: 50px;
+            font-weight:bolder;
+            background: linear-gradient(to left,
+                    violet,
+                    indigo,
+                    blue,
+                    green,
+                    yellow,
+                    orange,
+                    red);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation:text 3s 1;
+}
+.p{
+    background-color:lightgray;
+}
+.text{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color:black;
+}
+.location{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color:white;
+}
+.menu{
+    display:flex;
+    flex-direction: row;
+}
+.small{
+    width:30%;
+    height:100%;
+    background-color: bisque;
+}
+.large{
+    width:70%;
+    height:100%;
+    background-color:rgba(127, 22, 22, 0.896);
+    color:white;
+    justify-content: center;
+}
+.subs{ 
+    margin:10px;
+    display:flex;
+    flex-direction: row;
+    border:2px solid yellow;
+}
+.sub{
+    overflow: hidden;
+    border:2px solid yellow;
+}
+.special{
+    background-color: white;
+    color:black;
+    width:90%;
+    margin:25px;
+}
+.img1,.img2{
+    width:100%;
+}
+.large table{
+     margin: 15px;
+}
+.small h3{
+    color:white;
+    background-color: brown;
+}
+.large h2,p{
+    margin:5px
+}
+@keyframes fadeIn {
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+@keyframes text{
+    0%{
+        margin-bottom:-40px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+@media only screen and (max-width:768px){
+    body{
+        font-size:18px;
+    }
+}
+@media only screen and (max-width:450px){
+    body{
+        font-size:16px;
+    }
+}
+@media only screen and (orientation:portrait){
+     menu{
+        margin-left: 0px;
+        margin-right:0px;
+     }
+}
+@media only screen and (orientation:landscape){
+    menu{
+        margin-left:10px;
+        margin-right:10px;
+    }
+}
